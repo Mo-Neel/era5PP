@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: era5pplib
+Version: 0.1.0
+Summary: Useful library when dealing with netcdf climate data such as era5 data
+Home-page: UNKNOWN
+Author: Mohamed Elbasheer
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
