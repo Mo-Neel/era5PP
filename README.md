@@ -1,7 +1,7 @@
 # This library provides useful tools to analyse and process netCDF climate data such as ERA5 climate data.
 
-In  order to use the library without problems, make sure that the names of the main dimensions are as follows: 'time', 'longitude', 'latitude'
-for more information, you can also check the  uploaded jupyter notebook named "How to use era5pplib".
+In  order to use the library without problems, make sure that the names of the main dimensions are as follows: 'time', 'longitude', 'latitude'.
+For more information, you can also check the  uploaded jupyter notebook named "How to use era5pplib".
 
 ## Read the shapefile
 
