@@ -58,7 +58,7 @@ def nc4aggr(directory, listrange, outdir):
 
 # Calculate the daily average
 
-def resample(directory, type,  outdir):
+def resdaily(directory, type,  outdir):
 
     '''
     This function resamples the hourly netcdf data into daily netcdf data.
