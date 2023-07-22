@@ -1,7 +1,9 @@
 # This library provides useful tools to analyse and process netCDF climate data such as ERA5 climate data.
 
+In  order to use the library without problems, make sure that the names of the main dimensions are as follows: 'time', 'longitude', 'latitude'
+for more information, you can also check the  uploaded jupyter notebook named "How to use era5pplib".
 
-# Read the shapefile
+## Read the shapefile
 
 def shp(directory, type):
     
@@ -11,7 +13,7 @@ def shp(directory, type):
 
     '''
     
-# Plot a map with layers
+## Plot a map with layers
 
 def layerplt(raster, shapefile):
     
@@ -21,7 +23,7 @@ def layerplt(raster, shapefile):
 
     '''
 
-# How to clip the data
+## How to clip the data
 
 def clip(nc4file, coordinates, clippingtype, input):
 
@@ -34,7 +36,7 @@ def clip(nc4file, coordinates, clippingtype, input):
     
     '''
 
-# Averageing over the clib
+## Averageing over a clib
 
 def avgclip(clipped, output):
 
@@ -44,7 +46,7 @@ def avgclip(clipped, output):
     
     '''
 
-# Aggragate the yearly netCDF files into one netCDF
+## Aggragate the yearly netCDF files into one netCDF
 
 def nc4aggr(directory, listrange, outdir):
 
@@ -56,7 +58,7 @@ def nc4aggr(directory, listrange, outdir):
 
     '''
 
-# Calculate the daily average
+## Calculate the daily average
 
 def resdaily(directory, type,  outdir):
 
@@ -65,7 +67,7 @@ def resdaily(directory, type,  outdir):
     The function resamples based on the selected type. there are only two types to select. 'mean' or 'sum'
 
     '''
-# Calculate the relative humidity
+## Calculate the relative humidity
 
 def rh(T_directory, Tvar_name, Td_directory, Tdvar_name, out_dir):
     
@@ -80,7 +82,7 @@ def rh(T_directory, Tvar_name, Td_directory, Tdvar_name, out_dir):
     
     '''
 
-# Calculate the wind speed
+## Calculate the wind speed
 
 def W_velocity(u_directory, uvar_name, v_directory, vvar_name, out_dir):
     
