@@ -97,7 +97,7 @@ def clip(nc4file, coordinates, clippingtype, input):
 
         return clipped
 
-# Averageing over the clip
+# Averaging over the clip
 
 def avgclip(clipped, var_name, output):
 
@@ -164,7 +164,7 @@ def resdaily(directory, type,  outdir):
 def rh(T_directory, Tvar_name, Td_directory, Tdvar_name, out_dir):
     
     '''
-    This function takes the temperature as input (T is air temperature and Td is dew point temperature) in Kelvin (K) and it converts it to Degrees Celsius (°C)  
+    This function takes the temperature as input (T is the air temperature and Td is dew point temperature) in Kelvin (K) and converts it to Degrees Celsius (°C)  
     This function calculates the relative humidity using the Bolton equation which is used for a range of temperature between -30 °C to +35 °C.
     e = 6.112 * np.exp((17.67 * Td)/(Td + 243.5))
     es = 6.112 * np.exp((17.67 * T)/(T + 243.5))
