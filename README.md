@@ -1,5 +1,5 @@
 # This library provides useful tools to analyze and process netCDF climate data such as ERA5 climate data.
-you can directly download the library using the following pip install line in the command prompt:
+You can directly download the library using the following pip install line in the command prompt:
 pip install "git+https://github.com/Mo-Neel/era5PP.git"
 
 In  order to use the library without problems, make sure that the names of the main dimensions are as follows: 'time', 'longitude', 'latitude'.
