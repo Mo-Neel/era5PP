@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this small library, please cite it as below."
 authors:
 - family-names: "Elbasheer"
-  given-names: "Mohamed"
+  given-names: "Mohamed E."
 title: "era5PP: GitHub small package for the post-processing of the climate data"
 date-released: 2024-06-01
 url: "https://github.com/Mo-Neel/era5PP"
