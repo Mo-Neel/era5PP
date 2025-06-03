@@ -13,7 +13,7 @@ setup(
                       "matplotlib>=3.7.2",
                       "rasterio>=1.3.8",
                       "pandas>=2.0.3",
-                      "geopandas>=0.13.2"], 
+                      "geopandas==0.13.2"], 
     setup_requires=['pytest-runner'],
     tests_require=['pytest>=4.4.1'],
     test_suite='tests',
