@@ -1,7 +1,6 @@
 # Import the libraries
 
 import xarray as xr
-import netCDF4 
 import matplotlib.pyplot as plt
 import earthpy as et
 import earthpy.spatial as es
