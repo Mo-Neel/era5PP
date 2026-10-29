@@ -119,25 +119,18 @@ Both temperature variables must be provided in Kelvin. The function converts the
 
 The calculation uses the following equations:
 
-\[
-e = 6.112 \exp\left(\frac{17.67T_d}{T_d+243.5}\right)
-\]
+e = 6.112 * np.exp((17.67 * Td)/(Td + 243.5))
+e_s = 6.112 * np.exp((17.67 * T)/(T + 243.5))
 
-\[
-e_s = 6.112 \exp\left(\frac{17.67T}{T+243.5}\right)
-\]
-
-\[
-RH = 100\frac{e}{e_s}
-\]
+RH = 100 * e/e_s
 
 where:
 
-- \(T\) is the air temperature in degrees Celsius.
-- \(T_d\) is the dew-point temperature in degrees Celsius.
-- \(e\) is the actual vapour pressure in hPa.
-- \(e_s\) is the saturation vapour pressure in hPa.
-- \(RH\) is the relative humidity expressed as a percentage.
+- (T) is the air temperature in degrees Celsius.
+- (T_d) is the dew-point temperature in degrees Celsius.
+- (e) is the actual vapour pressure in hPa.
+- (e_s) is the saturation vapour pressure in hPa.
+- (RH) is the relative humidity expressed as a percentage.
 
 The Bolton formulation is intended for a temperature range of approximately −30 °C to +35 °C, as specified in the original function documentation.
 
