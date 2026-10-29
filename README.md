@@ -120,6 +120,7 @@ Both temperature variables must be provided in Kelvin. The function converts the
 The calculation uses the following equations:
 
 e = 6.112 * np.exp((17.67 * Td)/(Td + 243.5))
+
 e_s = 6.112 * np.exp((17.67 * T)/(T + 243.5))
 
 RH = 100 * e/e_s
@@ -150,15 +151,13 @@ Calculates wind speed from the two horizontal wind components: the zonal compone
 
 Wind speed is calculated using:
 
-\[
-W = \sqrt{u^2 + v^2}
-\]
+Wind speed = sqrt(u**2 + v**2)
 
 where:
 
-- \(u\) is the zonal wind component.
-- \(v\) is the meridional wind component.
-- \(W\) is the resulting wind speed.
+- (u) is the zonal wind component.
+- (v) is the meridional wind component.
+- (W) is the resulting wind speed.
 
 The input components must use compatible units. If they are expressed in metres per second, the resulting wind speed will also be in metres per second.
 
